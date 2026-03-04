@@ -1,0 +1,144 @@
+:root {
+    --pink: #E97BAD;
+    --black: #000;
+}
+body {
+    margin: 0;
+    padding: 2rem;
+}
+/* gameboy */
+article {
+    width: 50vw;
+    max-width: 400px;
+    height: 80vh;
+    padding: 2rem;
+    background-color: var(--pink);
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    justify-content: center;
+    
+    border: solid 5px var(--black);
+    border-radius: 3px 3px 50px 3px;
+}
+
+section:first-of-type {
+    background-color: var(--black);
+    border-radius: 3px 3px 50px 3px;
+}
+
+article section {
+    width: 100%;
+    height: 100%;
+    margin-bottom: 1rem;
+
+    background-color: var(--black);
+}
+
+/* control buttons */
+article section:nth-of-type(2) {
+    background-color: transparent;
+    margin: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    
+    justify-items: center;
+    align-items: center;
+
+    div {
+        display: flex;
+        width: fit-content;
+    }
+
+}
+
+input[type=checkbox] {
+    appearance: none;
+
+    width: 20px;
+    height: 20px;
+    background-color: gray;
+    border-radius: 100%;
+    border: solid 2px var(--black);
+
+    &:checked {
+        background-color: black;
+        /* translate: .3rem .3rem; */
+    }
+}
+
+/* Arrows */
+section:nth-of-type(2) div:first-of-type {
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+}
+
+section:nth-of-type(2) div:first-of-type input[type=checkbox] {
+    border-radius: 0;
+    width: 40px;
+    height: 30px;
+}
+
+section:nth-of-type(2) div:first-of-type input[type=checkbox]:first-of-type {
+    grid-column: 2;
+}
+
+section:nth-of-type(2) div:first-of-type input[type=checkbox]:nth-of-type(2) {
+    grid-row: 2;
+    grid-column: 3;
+}
+
+section:nth-of-type(2) div:first-of-type input[type=checkbox]:nth-of-type(3) {
+    grid-column: 2;
+    grid-row: 3;
+}
+
+section:nth-of-type(2) div:first-of-type input[type=checkbox]:nth-of-type(4) {
+    grid-column: 1;
+    grid-row: 2;
+}
+
+section:nth-of-type(2) div:first-of-type input[type=checkbox]:first-of-type, section:nth-of-type(2) div:first-of-type input[type=checkbox]:nth-of-type(3) {
+    rotate: 90deg;
+}
+
+
+/* A & B */
+section:nth-of-type(2) div:nth-of-type(2) {
+    width: 100%;
+    height: 100%;
+    display:flex;
+    justify-content: end;
+    align-items: center;
+
+    input[type=checkbox] {
+        width: 3em;
+        height: 3em
+    }
+
+    input[type=checkbox]:first-of-type {
+        margin-right: 1.5em;
+        align-self: end;
+        margin-bottom: 2em;
+    }
+
+}
+
+
+/* start and select */
+
+section:nth-of-type(2) div:nth-of-type(3) {
+    grid-column: 1 / span 2;
+
+    input[type=checkbox] {
+        border-radius: 10px;
+        width: 40px;
+        margin: 1em;
+    }
+
+}
