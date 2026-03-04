@@ -26,5 +26,7 @@ Mijn visuele inspiratie:
 
 <img src='https://d2e6ccujb3mkqf.cloudfront.net/fc5aacb7-ca2a-4a80-a9c7-2ca6c01b647c-1_980d5b1a-d71c-4469-b635-1e837aeaab3f.jpg'>
 
-In de ochtend hadden we een presentatie van Nils waar hij had verteld over de ontwikkeling van website design door de jaren heen. Verder op de dag heb ik gewerkt aan het begin van de gameboy, het koste wel wat moeite om de elementen op de juiste plek te plaatsten, maar dat was uiteindelijk wel gelukt. Ik ben bang dat het maken van het beeldscherm en de games op de gameboy maken lastig word.
+In de ochtend hadden we een presentatie van Nils waar hij had verteld over de ontwikkeling van website design door de jaren heen. Verder op de dag heb ik gewerkt aan het begin van de gameboy, het koste wel wat moeite om de elementen op de juiste plek te plaatsten, maar dat was uiteindelijk wel gelukt. Ik ben bang dat het maken van het beeldscherm en de games op de gameboy maken lastig word. 
+
+Gesprek met Sabrina.
 
