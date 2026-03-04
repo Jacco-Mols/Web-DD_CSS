@@ -6,6 +6,8 @@
 ### Dag 0 18 Februari
 Ik heb vandaag in een groepje met Choice en Julius een onderzoek gedaan naar scroll based animaties. Het was erg interessant om te zien wat je allemaal kan doen doormiddel van een simpele scroll beweging. Ik heb als eerst een progress bar gemaakt door position: sticky en een simpele scaleX(1) in je keyframes. Hierdoor bleef de vorm aan de bovenkant en werd het steeds langer totdat het aan de onderkant was, hier heb ik ook een kleuren animatie aan toegevoegd. Ik heb ook een carousel gemaakt waar je doorheen kan scrollen en afbeeldingen kan zien. 
 
+Link naar experimenten: https://jacco-mols.github.io/Web-DD_CSS_Experiments/
+
 # Dag 1 19 Februari
 Aan het begin van de dag hadden in groepjes presentaties over onze onderwerpen. Ik vond het wel interessant om te zien waar iedereen aan heeft gewerkt en wat ze hebben geleerd, dit was wel veel om te onthouden en zelf nu al toe te passen in mijn eigen code, maar fijn om alvast te zien wat verschillende functies in css zijn. Na de presentaties hadden we de kick-off van het vak CSS, hieruit moesten we kiezen uit een van de 4 opdrachten. De opdrachten die mij persoonlijk interessant lijken zijn de control panel en de Artifaction. Ik ben gaan brainstormen om wat ik zou kunnen doen met de control panel, ik had nog geen geweldige ideeën maar al wel in een goede richting. Aan het eind van de dag hadden we nog een lecture van Peter Paul Koch. Hij had verteld over de geschiedenis van browsers en hoe ze werken. Ik vond het een hele interssante presentatie, hij had bijvoorbeeld verteld over de Document object model en de accesibilty model. 
 
