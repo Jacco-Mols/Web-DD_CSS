@@ -2,41 +2,84 @@
     --pink: #E97BAD;
     --black: #000;
 }
+
 body {
-    margin: 0;
-    padding: 2rem;
+    margin: 2rem;
 }
-/* gameboy */
+
+main {
+    height: 200vh;
+}
+
+/**********
+ * gameboy *
+***********/
 article {
-    width: 50vw;
-    max-width: 400px;
+    width: 50%;
     height: 80vh;
+    max-width: 400px;
     padding: 2rem;
     background-color: var(--pink);
     display: flex;
     flex-direction: column;
     justify-self: center;
-    justify-content: center;
-    
+    justify-content: end;
     border: solid 5px var(--black);
     border-radius: 3px 3px 50px 3px;
-}
 
-section:first-of-type {
-    background-color: var(--black);
-    border-radius: 3px 3px 50px 3px;
-}
+    anchor-name:--anchor;
 
-article section {
+    @media (max-width: 750px) {
+    width: 60vw;
+    height: 80vh;
+    }
+
+    section {
     width: 100%;
     height: 100%;
     margin-bottom: 1rem;
 
     background-color: var(--black);
+    }
 }
 
-/* control buttons */
+/*********
+ * Power *
+**********/
+input[type=checkbox] {
+    appearance: none;
+    width: 1em;
+    height: 1em;
+    background-color: var(--black);
+    border-radius: 3px 3px 0px 0px;
+    position: absolute;
+    position-anchor:--anchor;
+    top:anchor(top);
+    left:anchor(left);
+    translate: .5em -1em;
+    transition: .3s;
+
+
+    &:checked {
+    translate: 3em -1em;
+
+    }
+}
+
+main label[for=power] {
+    position: absolute;
+    position-anchor: --anchor;
+    top:anchor(top);
+    left:anchor(left);
+    translate: .5em .5em;
+
+}
+
+/************
+ * controls *
+*************/
 article section:nth-of-type(2) {
+    max-height: 50%;
     background-color: transparent;
     margin: 0;
     display: grid;
@@ -50,10 +93,9 @@ article section:nth-of-type(2) {
         display: flex;
         width: fit-content;
     }
-
 }
 
-input[type=checkbox] {
+button {
     appearance: none;
 
     width: 20px;
@@ -62,83 +104,144 @@ input[type=checkbox] {
     border-radius: 100%;
     border: solid 2px var(--black);
 
-    &:checked {
+    &:active {
         background-color: black;
-        /* translate: .3rem .3rem; */
     }
 }
 
 /* Arrows */
-section:nth-of-type(2) div:first-of-type {
+section:nth-of-type(2) > div:first-of-type {
     height: 100%;
+    width: 70%;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
-    justify-items: center;
+    justify-self: start;
+    justify-items: end;
     align-items: center;
 }
 
-section:nth-of-type(2) div:first-of-type input[type=checkbox] {
+section:nth-of-type(2) div:first-of-type button {
     border-radius: 0;
     width: 40px;
     height: 30px;
 }
 
-section:nth-of-type(2) div:first-of-type input[type=checkbox]:first-of-type {
+section:nth-of-type(2) div:first-of-type button:first-of-type {
     grid-column: 2;
 }
 
-section:nth-of-type(2) div:first-of-type input[type=checkbox]:nth-of-type(2) {
+section:nth-of-type(2) div:first-of-type button:nth-of-type(2) {
     grid-row: 2;
     grid-column: 3;
 }
 
-section:nth-of-type(2) div:first-of-type input[type=checkbox]:nth-of-type(3) {
+section:nth-of-type(2) div:first-of-type button:nth-of-type(3) {
     grid-column: 2;
     grid-row: 3;
 }
 
-section:nth-of-type(2) div:first-of-type input[type=checkbox]:nth-of-type(4) {
+section:nth-of-type(2) div:first-of-type button:nth-of-type(4) {
     grid-column: 1;
     grid-row: 2;
 }
 
-section:nth-of-type(2) div:first-of-type input[type=checkbox]:first-of-type, section:nth-of-type(2) div:first-of-type input[type=checkbox]:nth-of-type(3) {
+section:nth-of-type(2) div:first-of-type button:first-of-type, section:nth-of-type(2) div:first-of-type button:nth-of-type(3) {
     rotate: 90deg;
 }
-
 
 /* A & B */
 section:nth-of-type(2) div:nth-of-type(2) {
     width: 100%;
     height: 100%;
-    display:flex;
+    display: flex;
     justify-content: end;
     align-items: center;
 
-    input[type=checkbox] {
+    ul {
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: end;
+        align-items: end;
+    }
+
+    ul li {
+        width: 5em;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    button {
         width: 3em;
         height: 3em
     }
 
-    input[type=checkbox]:first-of-type {
-        margin-right: 1.5em;
-        align-self: end;
+    ul li:not(:first-of-type) p {
         margin-bottom: 2em;
     }
 
+    @layer p {
+        justify-self: start;
+        align-self: start;
+        margin: 0;
+    }
 }
 
-
 /* start and select */
-
 section:nth-of-type(2) div:nth-of-type(3) {
     grid-column: 1 / span 2;
 
-    input[type=checkbox] {
+    button {
         border-radius: 10px;
         width: 40px;
         margin: 1em;
     }
 
+}
+
+/**********
+ * screen *
+***********/
+article > section:first-of-type {
+    background-color: var(--black);
+    border-radius: 3px 3px 40px 3px;
+    display: grid;
+    place-items: center;
+
+    > section {
+    width: 80%;
+    height: 80%;
+    background-color: gray;
+    /* border-radius: 3px 3px 50px 3px; */
+    margin:0;
+    }   
+}
+
+main:has(input[type=checkbox]:checked) section:has(section) section {
+    background-color: white;
+    opacity: 0;
+    animation-name: turn-on-screen;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+
+    /* h2 {
+        opaci
+    } */
+}
+
+main:has(input[type=checkbox]:checked) section:has(section) section h2 {
+    animation-name: turn-on-screen;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+}
+
+
+@keyframes turn-on-screen {
+    100% {
+        opacity: 1;
+    }
 }
