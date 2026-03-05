@@ -28,5 +28,6 @@ Mijn visuele inspiratie:
 
 In de ochtend hadden we een presentatie van Nils waar hij had verteld over de ontwikkeling van website design door de jaren heen. Verder op de dag heb ik gewerkt aan het begin van de gameboy, het koste wel wat moeite om de elementen op de juiste plek te plaatsten, maar dat was uiteindelijk wel gelukt. Ik ben bang dat het maken van het beeldscherm en de games op de gameboy maken lastig word. 
 
-Gesprek met Sabrina.
+###Donderdag 5 Maart
+IN de ochtend ben ik bij 2 workshops geweest van Sanne over animeren en anchor points. De animatie workshop was minder nieuw voor mij, maar het was nog steeds heel interessant en ik had er veel van opgestoken. De anchor points workshop was helemaal nieuw voor mij, ik heb dit ook nooit in mijn eigen werk gebruikt. Ik heb er super veel van opgestoken en kon dit gelijk in de middag toepassen in mijn eigen project. Na de workshops had ik meer tijd voor mijn eigen project. Ik had een tip gekregen van Nils dat ik geen checkboxes maar knoppen moest gebruiken, hierdoor bleven de knoppen niet ingedrukt als je er een keer op klikt. Daarna had ik een beetje gewerkt aan de responsiveness, ik merk dat ik het moeilijk vind om de beste waardes te bepalen voor elementen dus dit was veel trial en error. Ik heb als laatst ook een power button toegevoegd, hier had ik wel een checkbox voor gebruikt, omdat je het niet ingedrukt wil houden. Ik ben wel tevreden met mijn prestaties vandaag, maar hoop snel verder te komen.
 
