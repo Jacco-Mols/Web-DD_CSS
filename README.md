@@ -21,6 +21,13 @@ Mijn ideeën voor css zijn tot nu toe wel vaag ik heb nog geen concrete ideeën 
 ## Week 2
 
 ### Woensdag 4 Maart
+Ik heb er voor besloten om toch een control panel te maken, hier heb ik persoonlijk meer ideeën voor, en licht misschien meer op mijn niveau. Het leukste was om een gameboy te maken die uiteindelijk echt kan werken. Ik wil bijvoorbeeld met de controls de gameboy aanzetten, en een game spelen. 
+Mijn visuele inspiratie:
 
-inspo:
 <img src='https://d2e6ccujb3mkqf.cloudfront.net/fc5aacb7-ca2a-4a80-a9c7-2ca6c01b647c-1_980d5b1a-d71c-4469-b635-1e837aeaab3f.jpg'>
+
+In de ochtend hadden we een presentatie van Nils waar hij had verteld over de ontwikkeling van website design door de jaren heen. Verder op de dag heb ik gewerkt aan het begin van de gameboy, het koste wel wat moeite om de elementen op de juiste plek te plaatsten, maar dat was uiteindelijk wel gelukt. Ik ben bang dat het maken van het beeldscherm en de games op de gameboy maken lastig word. 
+
+### Donderdag 5 Maart
+IN de ochtend ben ik bij 2 workshops geweest van Sanne over animeren en anchor points. De animatie workshop was minder nieuw voor mij, maar het was nog steeds heel interessant en ik had er veel van opgestoken. De anchor points workshop was helemaal nieuw voor mij, ik heb dit ook nooit in mijn eigen werk gebruikt. Ik heb er super veel van opgestoken en kon dit gelijk in de middag toepassen in mijn eigen project. Na de workshops had ik meer tijd voor mijn eigen project. Ik had een tip gekregen van Nils dat ik geen checkboxes maar knoppen moest gebruiken, hierdoor bleven de knoppen niet ingedrukt als je er een keer op klikt. Daarna had ik een beetje gewerkt aan de responsiveness, ik merk dat ik het moeilijk vind om de beste waardes te bepalen voor elementen dus dit was veel trial en error. Ik heb als laatst ook een power button toegevoegd, hier had ik wel een checkbox voor gebruikt, omdat je het niet ingedrukt wil houden. Ik ben wel tevreden met mijn prestaties vandaag, maar hoop snel verder te komen.
+
