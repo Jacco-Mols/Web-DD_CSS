@@ -46,3 +46,16 @@ Ik vond de tweede week van CSS erg goed gaan, ik heb een goede basis neergezet v
 <img width="515" height="738" alt="Screenshot 2026-03-06 at 16 13 37" src="https://github.com/user-attachments/assets/e2176c62-b619-4178-9f46-56df7a77e7a7" />
 
 Ik hoop de volgende weken nog verder te kunnen komen in mijn projecten en grote stappen te kunnen maken in het maken van de game op de gameboy. Ik wil dan ook nog wat workshops volgen over misschien variabele fonts of animatie workshops. 
+
+
+## Week 3
+
+### Woensdag 11 Maart
+In de ochtend kregen we een presentatie van Sanne over de verschillende kleuren die je kan toepassen met css. Het was interssant om te leren welke waardes je kan gebruiken om verschillende gradients te krijgen met bijvoorbeeld oklch, hsl, rgb etc etc. Ook leuk om te zien hoe deze kleurwaardes eigenlijk in elkaar ztten en waar ze allemaal het beste voor gebruikt kunnen woorden. 
+
+Ik heb ook een svg filter workshop gevolgd van Sanne...
+
+Ik heb door de dag heen gekeken naar wat ik ga toepassen in mijn gameboy project. Ik kreeg vorige week een voorbeeld van iemand die een arcade machine had gemaakt met css. Hier heb ik veel inspiratie van genomen en mee geëxperimenteerd in codepen: https://codepen.io/Jacco01/pen/GgjNOqr?editors=0100
+Het was uiteindelijk gelukt met behulp van Cyd
+
+
