@@ -1,6 +1,12 @@
 :root {
+    /* color */
     --pink: #E97BAD;
     --black: #000;
+    --darkgray: #3c3939;
+
+
+    /* game */
+
 }
 
 body {
@@ -15,28 +21,21 @@ main {
  * gameboy *
 ***********/
 article {
-    width: 50%;
-    height: 80vh;
-    max-width: 400px;
+    width: 25em;
+    height: 37.5em;
     padding: 2rem;
     background-color: var(--pink);
     display: flex;
     flex-direction: column;
     justify-self: center;
-    justify-content: end;
+    justify-content: start;
     border: solid 5px var(--black);
     border-radius: 3px 3px 50px 3px;
 
     anchor-name:--anchor;
 
-    @media (max-width: 750px) {
-    width: 60vw;
-    height: 80vh;
-    }
-
     section {
     width: 100%;
-    height: 100%;
     margin-bottom: 1rem;
 
     background-color: var(--black);
@@ -46,7 +45,7 @@ article {
 /*********
  * Power *
 **********/
-input[type=checkbox] {
+main > input[type=checkbox]:first-of-type {
     appearance: none;
     width: 1em;
     height: 1em;
@@ -72,7 +71,6 @@ main label[for=power] {
     top:anchor(top);
     left:anchor(left);
     translate: .5em .5em;
-
 }
 
 /************
@@ -96,8 +94,6 @@ article section:nth-of-type(2) {
 }
 
 button {
-    appearance: none;
-
     width: 20px;
     height: 20px;
     background-color: gray;
@@ -107,6 +103,20 @@ button {
     &:active {
         background-color: black;
     }
+}
+
+input[type=radio] {
+    appearance: none;
+    width: 20px;
+    height: 10px;
+    background-color: gray;
+    border-radius: 100%;
+    border: solid 2px var(--black);
+
+    &:active {
+        background-color: black;
+    }
+
 }
 
 /* Arrows */
@@ -121,27 +131,27 @@ section:nth-of-type(2) > div:first-of-type {
     align-items: center;
 }
 
-section:nth-of-type(2) div:first-of-type button {
+section:nth-of-type(2) div:first-of-type input[type=radio] {
     border-radius: 0;
     width: 40px;
     height: 30px;
 }
 
-section:nth-of-type(2) div:first-of-type button:first-of-type {
+section:nth-of-type(2) div:first-of-type input[type=radio]:first-of-type {
     grid-column: 2;
 }
 
-section:nth-of-type(2) div:first-of-type button:nth-of-type(2) {
+section:nth-of-type(2) div:first-of-type input[type=radio]:nth-of-type(2) {
     grid-row: 2;
     grid-column: 3;
 }
 
-section:nth-of-type(2) div:first-of-type button:nth-of-type(3) {
+section:nth-of-type(2) div:first-of-type input[type=radio]:nth-of-type(3) {
     grid-column: 2;
     grid-row: 3;
 }
 
-section:nth-of-type(2) div:first-of-type button:nth-of-type(4) {
+section:nth-of-type(2) div:first-of-type input[type=radio]:nth-of-type(4) {
     grid-column: 1;
     grid-row: 2;
 }
@@ -194,54 +204,89 @@ section:nth-of-type(2) div:nth-of-type(2) {
 /* start and select */
 section:nth-of-type(2) div:nth-of-type(3) {
     grid-column: 1 / span 2;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    align-self: end;
 
     button {
         border-radius: 10px;
         width: 40px;
         margin: 1em;
+        grid-row: 1;
+        margin-bottom: 0;
     }
 
+    input[type=checkbox] {
+        appearance: none;
+        border-radius: 10px;
+        width: 40px;
+        margin: 1em;
+        grid-row: 1;
+        margin-bottom: 0;
+
+        background-color: gray;
+        border: solid 2px var(--black);
+
+        &:active {
+            background-color: black;
+        }
+    }
+
+
+    p {
+        text-align: center;
+    }
 }
 
 /**********
  * screen *
 ***********/
 article > section:first-of-type {
+    height: 20em;
     background-color: var(--black);
     border-radius: 3px 3px 40px 3px;
     display: grid;
     place-items: center;
 
     > section {
-    width: 80%;
-    height: 80%;
-    background-color: gray;
-    /* border-radius: 3px 3px 50px 3px; */
-    margin:0;
-    }   
-}
+        width: 18em;
+        height: 18em;
+        background-color: var(--darkgray);
+        margin:0;
+        display: grid;
+        justify-content: center;
+        align-items: center;
+    }
 
-main:has(input[type=checkbox]:checked) section:has(section) section {
-    background-color: white;
-    opacity: 0;
-    animation-name: turn-on-screen;
-    animation-duration: 1s;
-    animation-timing-function: linear;
-
-    /* h2 {
-        opaci
-    } */
-}
-
-main:has(input[type=checkbox]:checked) section:has(section) section h2 {
-    animation-name: turn-on-screen;
-    animation-duration: 1s;
-    animation-timing-function: linear;
-}
-
-
-@keyframes turn-on-screen {
-    100% {
-        opacity: 1;
+    section h2 {
+        opacity: 0;
+        text-align: center;
+        align-self: center;
     }
 }
+
+main:has(> input[type=checkbox]:first-of-type:checked) section:has(section) section {
+    background-color: white;
+    transition: 2s;
+}
+
+main:has(> input[type=checkbox]:first-of-type:checked) section:has(section) section h2 {
+    opacity: 1;
+    transition: 4s;
+}
+
+
+/********
+ * Game *
+*********/
+/* press start */
+article:has(section:nth-of-type(2) div:nth-of-type(3) input[type=checkbox]:checked) > section:first-of-type > section h2 {
+    display:none;
+}
+
+article:has(section:nth-of-type(2) div:nth-of-type(3) input[type=checkbox]:checked) > section:first-of-type > section {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr)
+}
+
