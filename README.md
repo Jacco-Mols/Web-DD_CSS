@@ -60,17 +60,14 @@ Hier heb ik veel inspiratie van genomen en mee geëxperimenteerd in codepen: htt
 Het was uiteindelijk gelukt met behulp van Cyd die wat missende ; had ontdekt en het grid had verbeterd, het grid die ik had gebruikt was 10 x 10 terwijl de variabele van het grid 4 x 4 is. Dit loste het probleem op, hiermee kon je doormiddel van 4 radio buttons op de x en y as vrij bewegen. Ik hoop deze code morgen in mijn eigen project te kunnen toepassen.
 
 
-### Donderdag 12 MaartI
+### Donderdag 12 Maart
 In de ochtend kregen we een wiskunde les van Sanne. Hierin liet Sanne verschillende werkstukken zien met wat je allemaal met bijvoorbeeld Sin Cos en tan kan doen in css. Ik vind dit persoonlijk niet heel leuk, ik ben ook niet heel goed in wiskunde waardoor ik er heel weinig van snapte. Het was wel interessant om te zien wat je allemaal kan doen met wiskunde in css.
 
 In de middag ben ik de uitdaging aangegaan om mijn experiment van gister in mijn eigen code te zetten. Ik snap heel goed wat de bedoeling is met code die ik gebruik, maar bijvoorbeeld calc() is nog nieuw voor mij, waardoor ik hier veel fouten in had gemaakt. Zo had ik bijvoorbeeld te veel haakjes toegevoegd bij calc dus er stond: calc( var(--size-grid) * var(var(--size-grid))); waardoor het uiteraard niet werkt. Wat ik ook fout deed was om de x en y as om te draaien. Bij elke knop (omhoog, omlaag etc) moet je de plaatsing definiëren dus link boven is 0.00001 en recht onder is 1, deze had ik dus omgedraaid. 
 Om mij met deze problemen op weg te helpen ik het gevraagd aan AI met de prompt: "it still doesnt work, i can see the x and y value slowly changing of the div, but the element isn't moving on screen." met daarbij de relaterende css code, hij kwma er dus achter dat er wat syntax errors in mijn calc zat en ik geen goede selectors had gebruikt. Na het oplossen van deze problemen werkte het eidnelijk wel, waar ik heel blij mee was.
 
 ### Afronding week 3 CSS
-Ik vond dit een hele leerzame en zinvolle week waar ik grote stappen heb kunnen maken aan mijn project en kennis in css. Ik heb bijvoorbeeld super veel geleerd over het calc element in css en hoe dit kan toepassen met variabelen om een element te laten bewegen in css. Ik merk ook dat ik css steeds leuker begin te vinden 
+Ik vond dit een hele leerzame en zinvolle week waar ik grote stappen heb kunnen maken aan mijn project en kennis in css. Ik heb bijvoorbeeld super veel geleerd over het calc element in css en hoe dit kan toepassen met variabelen om een element te laten bewegen in css. Ik merk ook dat ik css steeds leuker begin te vinden hoe meer ik ervan begrijp.
 
-wil nog graag gameboy mooi maken
-stress over eisen
-blij dat het gelukt is
-
-
+Waar ik me nog wel zorgen over maak zijn de eisen van de eindopdracht, omdat ik me veel heb gefocused op het werkend krijgen van de beweging in de game heb ik minder tijd over om nog andere dingen af te krijgen. Ik moet bijvoorbeeld nog een tweede thema toevoegen en nog bijvoorbeeld style queries of @layer toevoegen. Ik had zelf bedacht om deze twee samen te voegen en ervoor te zorgen dat ik verschillende thema's maak met een style queries op het momment dat je op een van de knoppen drukt.
+Daarnaast wil ik nog graag ervoor zorgen dat ik de gameboy nog mooier opmaak, zodat het wat meer 3d eruit ziet. Over het algemeen ben ik wel blij dat het tot nu toe helemaal werkt.
