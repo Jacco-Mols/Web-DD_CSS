@@ -60,4 +60,9 @@ Hier heb ik veel inspiratie van genomen en mee geëxperimenteerd in codepen: htt
 Het was uiteindelijk gelukt met behulp van Cyd die wat missende ; had ontdekt en het grid had verbeterd, het grid die ik had gebruikt was 10 x 10 terwijl de variabele van het grid 4 x 4 is. Dit loste het probleem op, hiermee kon je doormiddel van 4 radio buttons op de x en y as vrij bewegen. Ik hoop deze code morgen in mijn eigen project te kunnen toepassen.
 
 
+### Donderdag 12 Maart
+We kregen in de ochtend wiskunde van Sanne
+Middag divje laten bewegen met behulp van AI
+Draaide x en y as om waardoor het niet werkte.
+
 
