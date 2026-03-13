@@ -67,5 +67,10 @@ In de middag ben ik de uitdaging aangegaan om mijn experiment van gister in mijn
 Om mij met deze problemen op weg te helpen ik het gevraagd aan AI met de prompt: "it still doesnt work, i can see the x and y value slowly changing of the div, but the element isn't moving on screen." met daarbij de relaterende css code, hij kwma er dus achter dat er wat syntax errors in mijn calc zat en ik geen goede selectors had gebruikt. Na het oplossen van deze problemen werkte het eidnelijk wel, waar ik heel blij mee was.
 
 ### Afronding week 3 CSS
+Ik vond dit een hele leerzame en zinvolle week waar ik grote stappen heb kunnen maken aan mijn project en kennis in css. Ik heb bijvoorbeeld super veel geleerd over het calc element in css en hoe dit kan toepassen met variabelen om een element te laten bewegen in css. Ik merk ook dat ik css steeds leuker begin te vinden 
+
+wil nog graag gameboy mooi maken
+stress over eisen
+blij dat het gelukt is
 
 
