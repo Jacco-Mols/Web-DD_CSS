@@ -4,12 +4,15 @@
     --black: #000;
     --darkgray: #3c3939;
 
+    /* styling */
+    --size-gameboy: clamp(1rem, .8rem + 2vw, 2rem);
 
     /* game */
-
     /* sets the size of the screen by mutliplying the grid and player size, 4 * 50px...  */
     --size-grid: 4;
     --size-player: 75px;
+
+
     --size-screen: calc( var(--size-grid) * var(--size-player));
 
     --transition-stop: 10000s linear;
@@ -54,9 +57,7 @@
     /* down */
     &:has(article input[type=radio]:nth-of-type(3):checked) {
         --y: 1;
-    }
-
-    
+    }  
 }
 
 body {
@@ -76,8 +77,7 @@ h1 {
  * gameboy *
 ***********/
 article {
-    width: 25em;
-    height: 39em;
+    width:  calc( var(--size-gameboy) * 13);
     padding: 2rem;
     background-color: var(--pink);
     display: flex;
@@ -302,8 +302,9 @@ article > section:first-of-type {
     place-items: center;
 
     > section {
-        width: 300px;
-        height: 300px;
+        width:  calc( var(--size-gameboy) * 10);
+        max-width: 200px;
+        height: 200px;
         background-color: var(--darkgray);
         margin: 0;
         display: grid;
@@ -385,7 +386,7 @@ article:has(section:nth-of-type(2) div:nth-of-type(3) input[type=checkbox]:check
     initial-value: 0;
 }
 
-@media (max-width: 530px) {
+/* @media (max-width: 530px) {
     article {
         width: 22em;
         height: 39em;
@@ -397,4 +398,4 @@ article:has(section:nth-of-type(2) div:nth-of-type(3) input[type=checkbox]:check
         width: 18em;
         height: 39em;
     }
-}
+} */
