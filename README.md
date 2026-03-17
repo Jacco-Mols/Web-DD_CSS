@@ -73,3 +73,8 @@ Waar ik me nog wel zorgen over maak zijn de eisen van de eindopdracht, omdat ik 
 
 Tijdens ons gesprek had ik het ook over responsiveness met Sanne, hij vertelde dat je met clamp() een min en max waarde kan toevoegen aan een variabele en deze var weer met calc kan toepassen op een element. Dit lijkt me een hele handige manier om mijn gameboy responsive te maken en ervoor te zorgen dat ik hiermee ook de controls schaal.
 Daarnaast wil ik nog graag ervoor zorgen dat ik de gameboy nog mooier opmaak, zodat het wat meer 3d eruit ziet. Over het algemeen ben ik wel blij dat het tot nu toe helemaal werkt.
+
+
+
+### Algemene bronnen
+- https://developer.mozilla.org/en-US/docs/Web/CSS/Guides/Containment/Container_queries
