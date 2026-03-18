@@ -16,6 +16,9 @@
     --size-gameboy: clamp(1rem, .8rem + 2vw, 2rem);
 
     /* game */
+    /* inspiratie voor beweging: https://mtdvlpr.github.io/CSSttR-assignment/
+    mijn expiriment van bewegend balletje: https://codepen.io/Jacco01/pen/GgjNOqr?editors=0100
+    Ik had het expirement met behulp van Cyd afgemaakt die had ontdekt dat de groote van de player niet het juiste formaat was. */
     /* sets the size of the screen by mutliplying the grid and player size, 4 * 50px...  */
     --size-grid: 4;
     --size-player: 75px;
@@ -85,13 +88,13 @@ body {
     margin: 2rem;
     background-color: var(--bg);
 }
-/* 
+
 main {
     display: flex;
     justify-content: center;
     width: 800px;
     justify-self: center;
-} */
+}
 
 h1 {
     font-size: calc( var(--size-gameboy) * .8);
@@ -113,8 +116,8 @@ p, label {
 figure {
     width: calc( var(--size-gameboy) * 9);
     height: 40px;
-    margin: 0 0 .5rem 0;
     border-radius: 50px;
+    margin: .5rem;
     background-color: var(--pink);
     border: solid 5px var(--dark-pink);
     display: flex;
@@ -128,7 +131,7 @@ figure {
 ***********/
 article {
     width:  calc( var(--size-gameboy) * 12);
-    height: 600px;
+    height: 620px;
     padding: 2rem;
     background-color: var(--pink);
     display: flex;
@@ -138,6 +141,8 @@ article {
     border: solid 4px var(--black);
     border-radius: 3px;
     anchor-name:--anchor;
+    position: relative;
+    transform: rotateY(-10deg);
 
     section {
     width: 100%;
@@ -146,42 +151,39 @@ article {
     }
 }
 
-/* article::before {
+article::before {
     content: "";
-    width:  calc( var(--size-gameboy) * .1);
-    width: 100px;
-    height: 600px;
-    padding: 2em;
+    width: 3vw;
+    height: 100%;
     padding-left: 0;
-    background-color: var(--pink);
+    background-color: var(--dark-pink);
     border-style: solid;
     border-width: 4px;
     border-color: var(--black);
     border-radius: 3px;
     transform-origin: left;
-    transform: skewY(30deg);
     position: absolute;
-    right: 22.5%;
-    top: 4%;
+    left: 100%;
+    transform: skewY(45deg);
 }
 
 article::after {
     content: "";
-    width:  calc( var(--size-gameboy) * 14);
-    height: 50px;
-    background-color: var(--pink);
-    justify-self: center;
+    width: 100%;
+    height: 3vw;
+    background-color: var(--dark-pink);
     border-style: solid;
-    border-width: 4px 4px 4px;
+    border-width: 4px;
     border-color: var(--black);
     border-radius: 3px;
-
-
     transform-origin: top;
-    transform: skewX(20deg);
-} */
+    position: absolute;
+    top: 100%;
+    left: -5px;
+    transform: skewX(45deg);
+}
 
-/* Nils had aangeboden om een 3d look te geven doormiddel van een box-shadow een 2 triangles te gebruiken */
+/* Nils had aangeboden om een 3d look te geven doormiddel van een box-shadow een 2 triangles te gebruiken, ik heb dit geprobeert te doen, maar heb toch voor een andere manier gekozen */
 /* article::before {
     content: "";
     width: 0;
@@ -225,6 +227,7 @@ main label[for=power] {
     top:anchor(top);
     left:anchor(left);
     translate: .5em .5em;
+    z-index: 1;
 }
 
 /************
@@ -253,6 +256,8 @@ button {
     background-color: var(--darkgray);
     border-radius: 100%;
     border: none;
+    /* box shadow bedacht met behulp van Ai
+    prompt: i want to add 2 borders around this button. it's a button form a gameboy. I want to give a 3d look, so one border on the top half of the button and one around the box-shadow or bottom part.  */
     box-shadow: inset -2px -5px 0px 0px var(--black),  0px 0px 0 3px var(--black-gray);
 
     &:active {
@@ -370,6 +375,7 @@ html:has(section:nth-of-type(2) div:nth-of-type(2) ul li:first-of-type input[typ
     --scheme: thema;
 }
 
+
 /* start and select */
 section:nth-of-type(2) div:nth-of-type(3) {
     grid-column: 1 / span 2;
@@ -416,8 +422,9 @@ article > section:first-of-type {
     border-radius: 3px 3px 40px 3px;
     display: grid;
     place-items: center;
-
+    margin: 0;
     container-type: inline-size;
+
 
     > section {
         /* width:  calc( var(--size-gameboy) * 10); */
@@ -474,7 +481,6 @@ article > section:first-of-type div {
     display: none;
 }
 
-
 article:has(section:nth-of-type(2) div:nth-of-type(3) input[type=checkbox]:checked) > section:first-of-type > section {
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(4, 1fr);
@@ -523,6 +529,7 @@ article:has(section:nth-of-type(2) div:nth-of-type(3) input[type=checkbox]:check
     h1 {
         color: var(--dark-blue)
     }
+
     figure {
         background-color: var(--blue);
         border: solid 5px var(--dark-blue)
@@ -532,6 +539,17 @@ article:has(section:nth-of-type(2) div:nth-of-type(3) input[type=checkbox]:check
         background-color: var(--blue);
     }
 
+    article::before {
+        background-color: var(--dark-blue);
+    }
+
+    article::after {
+        background-color: var(--dark-blue);
+    }
+
+    article:has(sectio n:nth-of-type(2) div:nth-of-type(3) input[type="checkbox"]:checked) > section:first-of-type > section div {
+        background-color: var(--blue)
+    }
 }
 
  @media (max-width: 706px) {
