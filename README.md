@@ -83,15 +83,19 @@ Dit was gelukt doormiddel van een box-shadow te gebruiken, dit is een box-shadow
 Ik heb ook een style querie toegvoegd om ervoor te zorgen dat het thema veranderd als je op een van de knoppen druk op de gameboy. Dit was vrij makkelijk, ik heb al eerder een container query gebruikt.
 
 Waar ik wel moeite mee had was het maken 3D maken van mijn gameboy. Ik had eerst het idee om dit met een box-shadow te doen zoals bij mijn knoppen, maar met deze manier kreeg ik geen mooie afronding en lelijke hoeken. Nils had aangeraden om nog een before en after te gebruiken ik kon namelijk niet vlakken tegen mijn gameboy aan zetten omdat er rechts onder een ronde hoek zat, dus Nils had bedacht om de lelijke hoeken van de box-shadow weg te halen met driekhoekige vormen, wat opzich wel werkte maar deze hoeken waren lastig responsive te krijgen. 
+
 <img width="419" height="301" alt="aligning corner" src="https://github.com/user-attachments/assets/126b0bbc-cc86-4fd6-89b5-8f10fcd11618" />
 
 Ik heb dus naar andere manieren gezocht om dit te doen en had bedacht om de hoek rechts onderin niet hoekig te maken. hierdoor kon ik wel vlakken tegen de gameboy aanleggen. Dit was weer even zoeken naar hoe ik dit het beste kon stylen en kwam ook uiteraard tegen wat problemen aan met responsiveness.
+
 <img width="555" height="754" alt="tried making 3D" src="https://github.com/user-attachments/assets/d8f06e9c-861c-4d76-8d99-504a84425da2" />
 
 Dit had ik uiteindelijk weer opgelost met Nils die had uitgelecht dat position: relative op de parent moest en absolute op het element zelf. Ook had % gebruikt voor de top en bottom maar door px te gebruiken blijft het op zijn plek. Daarnaast moest ik transform-style: preserve-3d gebruiken op de parent en transform: rotate om het perspectief te veranderen. 
+
 <img width="610" height="743" alt="close to 3D gameboy" src="https://github.com/user-attachments/assets/9dd61957-ad63-41ac-b6ca-cee02d11f63d" />
 
 Dit was een stuk beter maar moest nog wat verbetering krijgen, Sanne had vertelt dat ik vw voor width en height moest gebruiken op de before en after zodat ze responsive waren. Toen had ik nog het onderste stuk toegevoegd.
+
 <img width="555" height="764" alt="final" src="https://github.com/user-attachments/assets/9da94dbf-9d48-4b3b-be67-8d3bbebde2fc" />
 
 
