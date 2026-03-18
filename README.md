@@ -74,7 +74,26 @@ Waar ik me nog wel zorgen over maak zijn de eisen van de eindopdracht, omdat ik 
 Tijdens ons gesprek had ik het ook over responsiveness met Sanne, hij vertelde dat je met clamp() een min en max waarde kan toevoegen aan een variabele en deze var weer met calc kan toepassen op een element. Dit lijkt me een hele handige manier om mijn gameboy responsive te maken en ervoor te zorgen dat ik hiermee ook de controls schaal.
 Daarnaast wil ik nog graag ervoor zorgen dat ik de gameboy nog mooier opmaak, zodat het wat meer 3d eruit ziet. Over het algemeen ben ik wel blij dat het tot nu toe helemaal werkt.
 
+## Week 4
+### Woensdag 18 Maart
+Ik heb vandaag hele grote laatste stappen gezet van mijn ontwerp aan mijn gameboy. Ik heb bijvoorbeeld de styling van de knoppen verbeterd zodat ze meer 3D en cartoon achtig eruit zien.
+<img width="610" height="743" alt="close to 3D gameboy" src="https://github.com/user-attachments/assets/dc40df5b-6f59-4d07-beed-cbbce510d692" />
+Dit was gelukt doormiddel van een box-shadow te gebruiken, dit is een box-shadow inset waarin ik het element iets omhoog heb geplaatst en vervolgens weer omlaag als je erop klikt. 
+
+Ik heb ook een style querie toegvoegd om ervoor te zorgen dat het thema veranderd als je op een van de knoppen druk op de gameboy. Dit was vrij makkelijk, ik heb al eerder een container query gebruikt.
+
+Waar ik wel moeite mee had was het maken 3D maken van mijn gameboy. Ik had eerst het idee om dit met een box-shadow te doen zoals bij mijn knoppen, maar met deze manier kreeg ik geen mooie afronding en lelijke hoeken. Nils had aangeraden om nog een before en after te gebruiken ik kon namelijk niet vlakken tegen mijn gameboy aan zetten omdat er rechts onder een ronde hoek zat, dus Nils had bedacht om de lelijke hoeken van de box-shadow weg te halen met driekhoekige vormen, wat opzich wel werkte maar deze hoeken waren lastig responsive te krijgen. 
+<img width="419" height="301" alt="aligning corner" src="https://github.com/user-attachments/assets/126b0bbc-cc86-4fd6-89b5-8f10fcd11618" />
+
+Ik heb dus naar andere manieren gezocht om dit te doen en had bedacht om de hoek rechts onderin niet hoekig te maken. hierdoor kon ik wel vlakken tegen de gameboy aanleggen. Dit was weer even zoeken naar hoe ik dit het beste kon stylen en kwam ook uiteraard tegen wat problemen aan met responsiveness.
+<img width="555" height="754" alt="tried making 3D" src="https://github.com/user-attachments/assets/d8f06e9c-861c-4d76-8d99-504a84425da2" />
+
+Dit had ik uiteindelijk weer opgelost met Nils die had uitgelecht dat position: relative op parent 
+
+## Reflectie CSS
 
 
 ### Algemene bronnen
 - https://developer.mozilla.org/en-US/docs/Web/CSS/Guides/Containment/Container_queries
+- https://mtdvlpr.github.io/CSSttR-assignment/
+- https://codepen.io/Jacco01/pen/GgjNOqr?editors=0100
