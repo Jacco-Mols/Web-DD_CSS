@@ -100,9 +100,14 @@ Dit was een stuk beter maar moest nog wat verbetering krijgen, Sanne had vertelt
 
 
 ## Reflectie CSS
+Ik vond CSS persoonlijk een heel leuk vak, de opdrachten keuzes waren interessasnt en ik vond het feit dat we vrij waren om te expirementeren heel leuk. Aan het begin zat ik daarom erg te twijfelen tussen Artification en een control paneel, uiteindelijk had ik voor een control panel gekozen, omdat ik hier veel meer ideeën voor had. Ik denk dat ik uiteindelijk de goede keuze gemaakt, omdat ik erg tevreden ben met het eindresultaat. 
 
+Aan het begin van dit vak wist ik eigenlijk niet erg veel over css, ik had uiteraard al wat van Sanne geleerd hiervoor maar niet achterlijk veel. Ik heb bijvoorbeeld geleerd wat container queries zijn, hoe je css goed moet nesten, wat een @layer is, waar je een calc() voor gebruikt en hoe je bijvoorbeeld perspectief moet toepassen in je eigen werk. 
+
+Waar ik achteraf super veel tijd voor nodig had was ervoor zorgen dat de vorm omhoog en omlaag beweegt als je op de relaterende knoppen klikt. Hier had ik echt goed tijd voor nodig om dit zelf uit te proberen in een codepen. Het koste mij 2 dagen en hulp van Cyd om dit goed werkend te krijgen. Ik ben achteraf heel trots op het eindresultaat en het het werk dat ik in het leerproces heb gestopt in dit vak. 
 
 ### Algemene bronnen
-- https://developer.mozilla.org/en-US/docs/Web/CSS/Guides/Containment/Container_queries
-- https://mtdvlpr.github.io/CSSttR-assignment/
-- https://codepen.io/Jacco01/pen/GgjNOqr?editors=0100
+- container queries uitleg: https://developer.mozilla.org/en-US/docs/Web/CSS/Guides/Containment/Container_queries
+- @layer uitleg: https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/At-rules/@layer 
+- Gameboy spel inspiratie: https://mtdvlpr.github.io/CSSttR-assignment/
+- Expiriment spel: https://codepen.io/Jacco01/pen/GgjNOqr?editors=0100
