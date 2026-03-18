@@ -88,7 +88,12 @@ Waar ik wel moeite mee had was het maken 3D maken van mijn gameboy. Ik had eerst
 Ik heb dus naar andere manieren gezocht om dit te doen en had bedacht om de hoek rechts onderin niet hoekig te maken. hierdoor kon ik wel vlakken tegen de gameboy aanleggen. Dit was weer even zoeken naar hoe ik dit het beste kon stylen en kwam ook uiteraard tegen wat problemen aan met responsiveness.
 <img width="555" height="754" alt="tried making 3D" src="https://github.com/user-attachments/assets/d8f06e9c-861c-4d76-8d99-504a84425da2" />
 
-Dit had ik uiteindelijk weer opgelost met Nils die had uitgelecht dat position: relative op parent 
+Dit had ik uiteindelijk weer opgelost met Nils die had uitgelecht dat position: relative op de parent moest en absolute op het element zelf. Ook had % gebruikt voor de top en bottom maar door px te gebruiken blijft het op zijn plek. Daarnaast moest ik transform-style: preserve-3d gebruiken op de parent en transform: rotate om het perspectief te veranderen. 
+<img width="610" height="743" alt="close to 3D gameboy" src="https://github.com/user-attachments/assets/9dd61957-ad63-41ac-b6ca-cee02d11f63d" />
+
+Dit was een stuk beter maar moest nog wat verbetering krijgen, Sanne had vertelt dat ik vw voor width en height moest gebruiken op de before en after zodat ze responsive waren. Toen had ik nog het onderste stuk toegevoegd.
+<img width="555" height="764" alt="final" src="https://github.com/user-attachments/assets/9da94dbf-9d48-4b3b-be67-8d3bbebde2fc" />
+
 
 ## Reflectie CSS
 
