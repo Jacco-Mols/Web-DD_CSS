@@ -18,9 +18,8 @@ Aan het begin van de dag hadden in groepjes presentaties over onze onderwerpen. 
 ### Vrijdag 20 Februari
 We hebben vandaag gesprekken gehad voor CSS en BT. Voor CSS heb ik nog geen concrete ideeën of werkstukjes die ik kan laten zien. Ik zit nog te twijfelen tussen Artifaction en een control panel, deze lijken me interessant omdat je hier heel creatief mee om kan gaan, ik denk dat ik een sprong in het diepe neem en voor Artifaction kies, dit lijk me heel leerzaam en een leuke mogelijkheid om te experimenteren. Ik heb ook na het gesprek met Nils een duidelijker beeld gekregen waardoor ik een beeld kan vormen.  
 
-### Week 1 CSS
+### Afronding week 1 CSS
 Mijn ideeën voor css zijn tot nu toe wel vaag ik heb nog geen concrete ideeën en ga dit volgende keer beter uitwerken, daarintegen vind ik de opdrachten wel heel uitdagend en interessant. Na twee dagen voor het vak CSS heb ik al super veel verschillende dingen geleerd, waaronder de kleuren laten veranderen door te scrollen, ddergelijke scroll animaties en wat voor nieuwe css functies er nog meer zijn die ik nog kan leren, zoals container queries.
-
 
 ## Week 2
 
