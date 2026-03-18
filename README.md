@@ -18,9 +18,8 @@ Aan het begin van de dag hadden in groepjes presentaties over onze onderwerpen. 
 ### Vrijdag 20 Februari
 We hebben vandaag gesprekken gehad voor CSS en BT. Voor CSS heb ik nog geen concrete ideeën of werkstukjes die ik kan laten zien. Ik zit nog te twijfelen tussen Artifaction en een control panel, deze lijken me interessant omdat je hier heel creatief mee om kan gaan, ik denk dat ik een sprong in het diepe neem en voor Artifaction kies, dit lijk me heel leerzaam en een leuke mogelijkheid om te experimenteren. Ik heb ook na het gesprek met Nils een duidelijker beeld gekregen waardoor ik een beeld kan vormen.  
 
-### Week 1 CSS
+### Afronding week 1 CSS
 Mijn ideeën voor css zijn tot nu toe wel vaag ik heb nog geen concrete ideeën en ga dit volgende keer beter uitwerken, daarintegen vind ik de opdrachten wel heel uitdagend en interessant. Na twee dagen voor het vak CSS heb ik al super veel verschillende dingen geleerd, waaronder de kleuren laten veranderen door te scrollen, ddergelijke scroll animaties en wat voor nieuwe css functies er nog meer zijn die ik nog kan leren, zoals container queries.
-
 
 ## Week 2
 
@@ -74,7 +73,40 @@ Waar ik me nog wel zorgen over maak zijn de eisen van de eindopdracht, omdat ik 
 Tijdens ons gesprek had ik het ook over responsiveness met Sanne, hij vertelde dat je met clamp() een min en max waarde kan toevoegen aan een variabele en deze var weer met calc kan toepassen op een element. Dit lijkt me een hele handige manier om mijn gameboy responsive te maken en ervoor te zorgen dat ik hiermee ook de controls schaal.
 Daarnaast wil ik nog graag ervoor zorgen dat ik de gameboy nog mooier opmaak, zodat het wat meer 3d eruit ziet. Over het algemeen ben ik wel blij dat het tot nu toe helemaal werkt.
 
+## Week 4
+### Woensdag 18 Maart
+Ik heb vandaag hele grote laatste stappen gezet van mijn ontwerp aan mijn gameboy. Ik heb bijvoorbeeld de styling van de knoppen verbeterd zodat ze meer 3D en cartoon achtig eruit zien.
+<img width="610" height="743" alt="close to 3D gameboy" src="https://github.com/user-attachments/assets/dc40df5b-6f59-4d07-beed-cbbce510d692" />
+Dit was gelukt doormiddel van een box-shadow te gebruiken, dit is een box-shadow inset waarin ik het element iets omhoog heb geplaatst en vervolgens weer omlaag als je erop klikt. 
 
+Ik heb ook een style querie toegvoegd om ervoor te zorgen dat het thema veranderd als je op een van de knoppen druk op de gameboy. Dit was vrij makkelijk, ik heb al eerder een container query gebruikt.
+
+Waar ik wel moeite mee had was het maken 3D maken van mijn gameboy. Ik had eerst het idee om dit met een box-shadow te doen zoals bij mijn knoppen, maar met deze manier kreeg ik geen mooie afronding en lelijke hoeken. Nils had aangeraden om nog een before en after te gebruiken ik kon namelijk niet vlakken tegen mijn gameboy aan zetten omdat er rechts onder een ronde hoek zat, dus Nils had bedacht om de lelijke hoeken van de box-shadow weg te halen met driekhoekige vormen, wat opzich wel werkte maar deze hoeken waren lastig responsive te krijgen. 
+
+<img width="419" height="301" alt="aligning corner" src="https://github.com/user-attachments/assets/126b0bbc-cc86-4fd6-89b5-8f10fcd11618" />
+
+Ik heb dus naar andere manieren gezocht om dit te doen en had bedacht om de hoek rechts onderin niet hoekig te maken. hierdoor kon ik wel vlakken tegen de gameboy aanleggen. Dit was weer even zoeken naar hoe ik dit het beste kon stylen en kwam ook uiteraard tegen wat problemen aan met responsiveness.
+
+<img width="555" height="754" alt="tried making 3D" src="https://github.com/user-attachments/assets/d8f06e9c-861c-4d76-8d99-504a84425da2" />
+
+Dit had ik uiteindelijk weer opgelost met Nils die had uitgelecht dat position: relative op de parent moest en absolute op het element zelf. Ook had % gebruikt voor de top en bottom maar door px te gebruiken blijft het op zijn plek. Daarnaast moest ik transform-style: preserve-3d gebruiken op de parent en transform: rotate om het perspectief te veranderen. 
+
+<img width="610" height="743" alt="close to 3D gameboy" src="https://github.com/user-attachments/assets/9dd61957-ad63-41ac-b6ca-cee02d11f63d" />
+
+Dit was een stuk beter maar moest nog wat verbetering krijgen, Sanne had vertelt dat ik vw voor width en height moest gebruiken op de before en after zodat ze responsive waren. Toen had ik nog het onderste stuk toegevoegd.
+
+<img width="555" height="764" alt="final" src="https://github.com/user-attachments/assets/9da94dbf-9d48-4b3b-be67-8d3bbebde2fc" />
+
+
+## Reflectie CSS
+Ik vond CSS persoonlijk een heel leuk vak, de opdrachten keuzes waren interessasnt en ik vond het feit dat we vrij waren om te expirementeren heel leuk. Aan het begin zat ik daarom erg te twijfelen tussen Artification en een control paneel, uiteindelijk had ik voor een control panel gekozen, omdat ik hier veel meer ideeën voor had. Ik denk dat ik uiteindelijk de goede keuze gemaakt, omdat ik erg tevreden ben met het eindresultaat. 
+
+Aan het begin van dit vak wist ik eigenlijk niet erg veel over css, ik had uiteraard al wat van Sanne geleerd hiervoor maar niet achterlijk veel. Ik heb bijvoorbeeld geleerd wat container queries zijn, hoe je css goed moet nesten, wat een @layer is, waar je een calc() voor gebruikt en hoe je bijvoorbeeld perspectief moet toepassen in je eigen werk. 
+
+Waar ik achteraf super veel tijd voor nodig had was ervoor zorgen dat de vorm omhoog en omlaag beweegt als je op de relaterende knoppen klikt. Hier had ik echt goed tijd voor nodig om dit zelf uit te proberen in een codepen. Het koste mij 2 dagen en hulp van Cyd om dit goed werkend te krijgen. Ik ben achteraf heel trots op het eindresultaat en het het werk dat ik in het leerproces heb gestopt in dit vak. 
 
 ### Algemene bronnen
-- https://developer.mozilla.org/en-US/docs/Web/CSS/Guides/Containment/Container_queries
+- container queries uitleg: https://developer.mozilla.org/en-US/docs/Web/CSS/Guides/Containment/Container_queries
+- @layer uitleg: https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/At-rules/@layer 
+- Gameboy spel inspiratie: https://mtdvlpr.github.io/CSSttR-assignment/
+- Expiriment spel: https://codepen.io/Jacco01/pen/GgjNOqr?editors=0100
